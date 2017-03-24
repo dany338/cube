@@ -123,7 +123,7 @@ class CasoController extends Controller
 
                                         $detallesaux = Detalleprueba::find()->where(['idPrueba'=>$modelPrueba->id])->andWhere(['idOperation'=>1])->all();
                                         $res = 0;
-                                        foreach ($detallesaux as $key => $detalleaux) {
+                                        foreach ($modelDetalle as $key => $detalleaux) {
                                             $cordX1i = $detallesaux->cordX1;
                                             $cordY1i = $detallesaux->cordY1;
                                             $cordZ1i = $detallesaux->cordZ1;
